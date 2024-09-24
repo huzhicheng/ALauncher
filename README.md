@@ -8,10 +8,14 @@
 [**APK包下载**](https://github.com/huzhicheng/ALauncher/releases/download/1.0/ALauncher-release.apk) • [**Twitter关注我**](https://x.com/moon_kites)  • [**微信联系我**](https://www.moonkite.cn/wechat)
 </div>
 
-### 效果展示
-![](https://hexo.moonkite.cn/blog/202409241606408.png)
 
-![](https://hexo.moonkite.cn/blog/202409241606410.png)
+<div align="center">
+<h4>效果展示</h4>
+</div>
+
+![](https://raw.githubusercontent.com/huzhicheng/images/refs/heads/main/1.png)
+
+![](https://raw.githubusercontent.com/huzhicheng/images/refs/heads/main/2.png)
 
 
 此应用由 [Olauncher](https://github.com/tanujnotes/Olauncher) 修改而来，去掉了一些多余的功能和描述信息，并修改了桌面时间和电量显示。
