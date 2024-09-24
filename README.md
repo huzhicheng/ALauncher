@@ -9,9 +9,9 @@
 </div>
 
 ### 效果展示
-![](https://hexo.moonkite.cn/blog/202409241606408.png)
+![](https://hexo.moonkite.cn/blog/202409241610192.png)
 
-![](https://hexo.moonkite.cn/blog/202409241606410.png)
+![](https://hexo.moonkite.cn/blog/202409241610193.png)
 
 
 此应用由 [Olauncher](https://github.com/tanujnotes/Olauncher) 修改而来，去掉了一些多余的功能和描述信息，并修改了桌面时间和电量显示。
