@@ -166,7 +166,7 @@ class Prefs(context: Context) {
         set(value) = prefs.edit().putInt(APP_THEME, value).apply()
 
     var textSizeScale: Float
-        get() = prefs.getFloat(TEXT_SIZE_SCALE, 1.0f)
+        get() = prefs.getFloat(TEXT_SIZE_SCALE, Constants.TextSize.TWO)
         set(value) = prefs.edit().putFloat(TEXT_SIZE_SCALE, value).apply()
 
     var hideDigitalWellbeing: Boolean

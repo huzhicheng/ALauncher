@@ -1,29 +1,18 @@
-![Olauncher](https://repository-images.githubusercontent.com/278638069/db0acb80-661b-11eb-803e-926cae5dccb4)
+<div align="center">
+<h1>一无桌面</h1>
 
 
-# Olauncher | Minimal AF Launcher
-AF stands for Ad-Free :D
+<strong>一个宁静的 Android 启动器，以极简化的运行安卓桌面，可以理解为一个不加任何修饰的主题</strong>
 
 
-## Install
+[**APK包下载**](https://github.com/huzhicheng/ALauncher/releases/download/1.0/ALauncher-release.apk) • [**Twitter关注我**](https://x.com/moon_kites)  • [**微信联系我**](https://www.moonkite.cn/wechat)
+</div>
 
-#### Install from [F-Droid](https://f-droid.org/packages/app.olauncher) or [Play Store](https://play.google.com/store/apps/details?id=app.olauncher) or download the APK from the [latest release](https://github.com/tanujnotes/Olauncher/releases/).
+### 样式展示
+![](https://hexo.moonkite.cn/blog/202409241559902.png)
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-    alt="Get it on F-Droid"
-    height="80">](https://f-droid.org/packages/app.olauncher)
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-    alt="Get it on F-Droid"
-    height="80">](https://play.google.com/store/apps/details?id=app.olauncher)
+![](https://hexo.moonkite.cn/blog/202409241559800.png)
 
-To maintain the simplicity of the launcher, a few niche features are available but hidden.
 
-Please check out the [About](https://tanujnotes.substack.com/p/olauncher-minimal-af-launcher?utm_source=github) page in Olauncher settings for the complete feature list and FAQs.
+此应用由 [Olauncher](https://github.com/tanujnotes/Olauncher) 修改而来，去掉了一些多余的功能和描述信息，并修改了桌面时间和电量显示。
 
-##
-
-License: [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
-Developer: [@tanujnotes](https://twitter.com/tanujnotes)
-
-Thank you and have a wonderful day!
