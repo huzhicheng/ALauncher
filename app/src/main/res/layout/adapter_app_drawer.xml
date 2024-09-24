@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/appIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/appTitle"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:text="@string/app" />
+
+                <ImageView
+                    android:id="@+id/otherProfileIndicator"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_rounded"
+                    app:tint="?attr/primaryColor"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/appHideLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="?attr/primaryShadeDarkColor"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/appDelete"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/delete"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:minWidth="120dp"
+                    app:drawableStartCompat="@drawable/ic_delete" />
+
+                <TextView
+                    android:id="@+id/appRename"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/rename"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:minWidth="120dp"
+                    app:drawableStartCompat="@drawable/ic_rename" />
+
+                <TextView
+                    android:id="@+id/appHide"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/hide"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:minWidth="120dp"
+                    app:drawableStartCompat="@drawable/ic_hide" />
+
+                <TextView
+                    android:id="@+id/appInfo"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/info"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:minWidth="120dp"
+                    app:drawableStartCompat="@drawable/ic_info" />
+
+                <TextView
+                    android:id="@+id/appMenuClose"
+                    style="@style/TextSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="8dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/close"
+                    android:textSize="14sp"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:minWidth="120dp"
+                    app:drawableStartCompat="@drawable/ic_close" />
+
+            </LinearLayout>
+        </FrameLayout>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/renameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+<!--        <androidx.appcompat.widget.AppCompatEditText-->
+<!--            android:id="@+id/etAppRename"-->
+<!--            style="@style/TextLarge"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="2"-->
+<!--        android:background="@null"-->
+<!--        android:inputType="textCapWords"-->
+<!--        android:maxLength="30"-->
+<!--        android:maxLines="1"-->
+<!--        android:textColorHint="?attr/primaryColorTrans50" />-->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAppRename"
+            style="@style/TextLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textCapWords"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:textColorHint="?attr/primaryColorTrans50" />
+
+
+        <TextView
+            android:id="@+id/tvSaveRename"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="@string/rename"
+            android:textSize="12sp"
+            android:padding="8dp"
+            app:drawableTopCompat="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/appRenameClose"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="@string/close"
+            android:textSize="12sp"
+            app:drawableTopCompat="@drawable/ic_close" />
+    </LinearLayout>
+
+</FrameLayout>

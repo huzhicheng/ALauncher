@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?attr/primaryShadeDarkColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:imeOptions="actionSearch"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="0dp"
+            android:textCursorDrawable="@null"
+            app:closeIcon="@null"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Tap Search"
+            app:searchIcon="@null"
+            app:theme="@style/AppSearchText" />
+
+        <TextView
+            android:id="@+id/appRename"
+            style="@style/TextSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"
+            android:paddingVertical="@dimen/app_padding_vertical"
+            android:text="@string/rename"
+            android:textAllCaps="true"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appDrawerTip"
+        style="@style/TextSmallLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:ellipsize="marquee"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/app_drawer_tips"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="24dp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fadingEdgeLength="24dp"
+        android:requiresFadingEdge="vertical"
+        android:background="@drawable/rounded_rect_shade_color"
+        android:orientation="vertical"
+        android:padding="12dp"/>
+
+</FrameLayout>

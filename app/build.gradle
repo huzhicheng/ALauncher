@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
+
+    defaultConfig {
+        applicationId "app.olauncher"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 85
+        versionName "v4.3.3"
+
+        resourceConfigurations += ["en", "ar", "de", "es-rES", "es-rUS", "fr", "hr", "hu", "in", "it", "ja", "pl", "pt-rBR", "ru-rRU", "sv", "tr", "uk", "zh"]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            applicationIdSuffix ".debug"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation libs.kotlin.stdlib
+    implementation libs.core.ktx
+    implementation libs.appcompat
+    implementation libs.recyclerview
+
+    // Android lifecycle
+    implementation libs.lifecycle.extensions
+    implementation libs.lifecycle.viewmodel.ktx
+
+    // Navigation
+    implementation libs.navigation.fragment.ktx
+
+    // Work Manager
+    implementation libs.work.runtime.ktx
+
+    //Material dependency
+    implementation libs.material
+
+}
