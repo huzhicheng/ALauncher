@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="app_name">一无桌面</string>
+    <string name="github" >Github</string>
+    <string name="lock_layout_description" >lock layout description to be used a unique id to lock screen</string>
+    <string name="olauncher_pro">Olauncher Pro</string>
+    <string name="digital_minimalism"><u>Digital Minimalism</u></string>
+    <string name="day_battery" formatted="false" translatable="false">%s ⚡%d%%</string>
+
+
     <string name="app">应用程序</string>
     <string name="set_as_default_launcher">设置为默认启动器</string>
     <string name="set_as_default_launcher_first">设置为默认启动器</string>
@@ -8,16 +17,16 @@
     <string name="cool">非常棒！</string>
     <string name="tip_start_typing_for_rename">提示：开始输入应用程序重命名选项</string>
     <string name="your_wallpaper_will_update_shortly">您的壁纸即将更新</string>
-    <string name="olauncher_is_not_default_launcher">Olauncher 不是默认启动器。 每日壁纸更新可能会失败。</string>
+    <string name="olauncher_is_not_default_launcher">一无桌面 不是默认启动器。 每日壁纸更新可能会失败。</string>
     <string name="long_press_to_enable">长按即可启用</string>
     <string name="no_hidden_apps">没有隐藏的应用程序</string>
     <string name="hidden_apps">隐藏的应用程序</string>
-    <string name="hidden_apps_message">注意：点击此设置页面顶部的“Olauncher”即可找到隐藏的应用程序。
+    <string name="hidden_apps_message">注意：点击此设置页面顶部的“静”即可找到隐藏的应用程序。
         \n\n更多详细信息请参阅下面的“关于”页面。</string>
     <string name="swipe_down_for">向下滑动查看</string>
     <string name="search">搜索</string>
     <string name="notifications">通知</string>
-    <string name="accessibility_disclosure">请在您设备的设置中打开或关闭 Olauncher 的辅助服务以启用或禁用此功能。
+    <string name="accessibility_disclosure">请在您设备的设置中打开或关闭 “一无桌面” 的辅助服务以启用或禁用此功能。
         \n\n请注意，此服务仅用于让您使用双击手势关闭设备的屏幕。 我们的无障碍服务不收集或共享任何数据。</string>
     <string name="accept">接受</string>
     <string name="permission">允许</string>

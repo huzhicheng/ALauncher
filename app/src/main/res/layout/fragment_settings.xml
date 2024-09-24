@@ -70,38 +70,6 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/set_as_default_launcher" />
 
-                <TextView
-                    android:id="@+id/aboutOlauncher"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/about_olauncher" />
-
-                <TextView
-                    android:id="@+id/olauncherPro"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/olauncher_pro" />
-
-                <TextView
-                    android:id="@+id/digitalWellbeing"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="@string/digital_wellbeing"
-                    android:visibility="gone"
-                    tools:visibility="visible" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -293,14 +261,7 @@
                     android:layout_marginTop="12dp"
                     android:animateLayoutChanges="true">
 
-                    <TextView
-                        android:id="@+id/dailyWallpaperUrl"
-                        style="@style/TextSmall"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:paddingVertical="8dp"
-                        android:text="@string/daily_wallpaper_update" />
+
 
                     <TextView
                         android:id="@+id/dailyWallpaper"
@@ -913,36 +874,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/twitter"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:padding="10dp"
-                    android:text="@string/twitter" />
-
-                <TextView
-                    android:id="@+id/share"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:padding="10dp"
-                    android:text="@string/share" />
-
-                <TextView
-                    android:id="@+id/rate"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:padding="10dp"
-                    android:text="@string/rate" />
-
-                <TextView
                     android:id="@+id/github"
                     style="@style/TextSmall"
                     android:layout_width="wrap_content"
@@ -951,27 +882,9 @@
                     android:maxLines="1"
                     android:padding="10dp"
                     android:text="@string/github" />
-
-                <TextView
-                    android:id="@+id/privacy"
-                    style="@style/TextSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:padding="10dp"
-                    android:text="@string/privacy" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/footer"
-                style="@style/TextSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:letterSpacing="0.03"
-                android:padding="12dp"
-                android:text="@string/digital_minimalism" />
+
 
         </LinearLayout>
 
